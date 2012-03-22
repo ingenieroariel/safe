@@ -11,7 +11,7 @@ readme_text = file('README.rst', 'rb').read()
 
 setup(name          = 'SAFE',
       version       = '0.1',
-      description   = "Geospatial impact engine",
+      description   = 'Geospatial impact engine',
       license       = 'BSD',
       keywords      = 'gis vector feature raster data',
       author        = 'Ole Nielsen',
@@ -23,6 +23,7 @@ setup(name          = 'SAFE',
       packages = ['safe'],
       install_requires  = [],
       tests_require = ['nose'],
+      test_suite = 'nose.collector',
       classifiers   = [
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
