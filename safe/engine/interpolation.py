@@ -5,10 +5,10 @@ using the underlying interpolation algorithm in interpolate2d.py
 """
 
 import numpy
-from engine.interpolation2d import interpolate_raster
-from storage.vector import Vector
-from storage.vector import convert_polygons_to_centroids
-from storage.utilities import verify
+from safe.engine.interpolation2d import interpolate_raster
+from safe.storage.vector import Vector
+from safe.storage.vector import convert_polygons_to_centroids
+from safe.storage.utilities import verify
 
 
 def interpolate_raster_vector_points(R, V, name=None):

@@ -5,13 +5,13 @@ import os
 import numpy
 from osgeo import gdal
 from projection import Projection
-from utilities import DRIVER_MAP
-from engine.interpolation import interpolate_raster_vector
-from utilities import read_keywords
-from utilities import write_keywords
-from utilities import nanallclose
-from utilities import geotransform2bbox, geotransform2resolution
-from utilities import verify
+from safe.storage.utilities import DRIVER_MAP
+from safe.engine.interpolation import interpolate_raster_vector
+from safe.storage.utilities import read_keywords
+from safe.storage.utilities import write_keywords
+from safe.storage.utilities import nanallclose
+from safe.storage.utilities import geotransform2bbox, geotransform2resolution
+from safe.storage.utilities import verify
 
 
 class Raster:

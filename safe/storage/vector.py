@@ -5,18 +5,18 @@ import os
 import numpy
 from osgeo import ogr, gdal
 from projection import Projection
-from utilities import DRIVER_MAP, TYPE_MAP, DEFAULT_ATTRIBUTE
-from utilities import read_keywords
-from utilities import write_keywords
-from utilities import get_geometry_type
-from utilities import is_sequence
-from utilities import array2wkt
-from utilities import calculate_polygon_centroid
-from utilities import points_along_line
-from utilities import geometrytype2string
-from utilities import verify
-from engine.polygon import inside_polygon, clip_line_by_polygon
-from engine.numerics import ensure_numeric
+from safe.storage.utilities import DRIVER_MAP, TYPE_MAP, DEFAULT_ATTRIBUTE
+from safe.storage.utilities import read_keywords
+from safe.storage.utilities import write_keywords
+from safe.storage.utilities import get_geometry_type
+from safe.storage.utilities import is_sequence
+from safe.storage.utilities import array2wkt
+from safe.storage.utilities import calculate_polygon_centroid
+from safe.storage.utilities import points_along_line
+from safe.storage.utilities import geometrytype2string
+from safe.storage.utilities import verify
+from safe.engine.polygon import inside_polygon, clip_line_by_polygon
+from safe.engine.numerics import ensure_numeric
 
 
 class Vector:
