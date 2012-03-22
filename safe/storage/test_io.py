@@ -5,35 +5,35 @@ import os
 
 from osgeo import gdal
 
-from raster import Raster
-from vector import Vector
-from vector import convert_polygons_to_centroids
-from projection import Projection
-from projection import DEFAULT_PROJECTION
-from core import read_layer
-from core import write_raster_data
-from utilities import unique_filename
-from utilities import write_keywords
-from utilities import read_keywords
-from utilities import bbox_intersection
-from utilities import minimal_bounding_box
-from utilities import buffered_bounding_box
-from utilities import array2wkt
-from utilities import calculate_polygon_area
-from utilities import calculate_polygon_centroid
-from utilities import points_along_line
-from utilities import geotransform2bbox
-from utilities import geotransform2resolution
-from utilities import nanallclose
-from utilities import ugettext as _
-from utilities import VerificationError
-from core import get_bounding_box
-from core import bboxlist2string, bboxstring2list
-from core import check_bbox_string
-from utilities_test import same_API
-from utilities_test import TESTREPO, TESTDATA
-from utilities_test import FEATURE_COUNTS
-from utilities_test import GEOTRANSFORMS
+from safe.storage.raster import Raster
+from safe.storage.vector import Vector
+from safe.storage.vector import convert_polygons_to_centroids
+from safe.storage.projection import Projection
+from safe.storage.projection import DEFAULT_PROJECTION
+from safe.storage.core import read_layer
+from safe.storage.core import write_raster_data
+from safe.storage.utilities import unique_filename
+from safe.storage.utilities import write_keywords
+from safe.storage.utilities import read_keywords
+from safe.storage.utilities import bbox_intersection
+from safe.storage.utilities import minimal_bounding_box
+from safe.storage.utilities import buffered_bounding_box
+from safe.storage.utilities import array2wkt
+from safe.storage.utilities import calculate_polygon_area
+from safe.storage.utilities import calculate_polygon_centroid
+from safe.storage.utilities import points_along_line
+from safe.storage.utilities import geotransform2bbox
+from safe.storage.utilities import geotransform2resolution
+from safe.storage.utilities import nanallclose
+from safe.storage.utilities import ugettext as _
+from safe.storage.utilities import VerificationError
+from safe.storage.core import get_bounding_box
+from safe.storage.core import bboxlist2string, bboxstring2list
+from safe.storage.core import check_bbox_string
+from safe.storage.utilities_test import same_API
+from safe.storage.utilities_test import TESTREPO, TESTDATA
+from safe.storage.utilities_test import FEATURE_COUNTS
+from safe.storage.utilities_test import GEOTRANSFORMS
 
 
 # Auxiliary function for raster test
