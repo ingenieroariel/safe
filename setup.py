@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 try:
     from setuptools import setup
 except ImportError:
@@ -17,7 +20,6 @@ setup(name          = 'SAFE',
       maintainer_email  = 'ingenieroariel@gmail.com',
       url   = 'http://github.com/AIFDR/safe',
       long_description = readme_text,
-      package_dir = {'': ''},
       packages = ['safe'],
       install_requires  = [],
       tests_require = ['nose'],
