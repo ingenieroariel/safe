@@ -20,3 +20,6 @@ pip-log.txt
 #Testing output
 .coverage
 nosetests.xml
+
+#Others
+venv
