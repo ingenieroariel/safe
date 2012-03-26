@@ -25,7 +25,7 @@ setup(name          = 'python-safe',
       tests_require = ['nose'],
       test_suite = 'nose.collector',
       classifiers   = [
-        'Development Status :: 5 - Alpha',
+        'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: BSD License',
